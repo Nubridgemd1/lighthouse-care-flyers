@@ -110,7 +110,7 @@
 
 <footer>
   <b>Lighthouse Care Services</b> · 19418 Little Pine Lane, Katy, TX 77449 · Operated by Linus Agwunobi<br>
-  Tap any image to open full size · the download button saves it to your phone or computer.
+  Tap any image to open full size · <b>↗ Share</b> sends that one flyer to WhatsApp, Messenger, email or text · ⬇ saves it.
 </footer>
 
 <div class="toast" id="toast">Link copied ✓</div>
@@ -127,13 +127,13 @@
   ];
   document.getElementById('grid').innerHTML=F.map((f,i)=>{const n=i+1,s='Lighthouse-Flyer-'+n+'.png';
     return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]}"></a>
-      <div class="m"><div class="t">${n}. ${f[0]}<span>${f[1]}</span></div><a class="dl" href="${s}" download>⬇ PNG</a></div></div>`;}).join('');
+      <div class="m"><div class="t">${n}. ${f[0]}<span>${f[1]}</span></div><span style="display:flex;gap:7px"><button class="dl" style="background:#25d366;color:#07351b;border:none;cursor:pointer" onclick="shareItem('${s}','${f[0]}')">↗ Share</button><a class="dl" href="${s}" download>⬇</a></span></div></div>`;}).join('');
   document.getElementById('story').innerHTML=F.map((f,i)=>{const n=i+1,s='social-story/Story-'+n+'.png';
     return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]} story"></a>
-      <div class="m"><div class="t">${n}. ${f[1]}</div><a class="dl" href="${s}" download>⬇</a></div></div>`;}).join('');
+      <div class="m"><div class="t">${n}. ${f[1]}</div><span style="display:flex;gap:7px"><button class="dl" style="background:#25d366;color:#07351b;border:none;cursor:pointer" onclick="shareItem('${s}','${f[0]}')">↗</button><a class="dl" href="${s}" download>⬇</a></span></div></div>`;}).join('');
   document.getElementById('square').innerHTML=F.map((f,i)=>{const n=i+1,s='social-square/Square-'+n+'.png';
     return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]} square"></a>
-      <div class="m"><div class="t">${n}. ${f[1]}</div><a class="dl" href="${s}" download>⬇</a></div></div>`;}).join('');
+      <div class="m"><div class="t">${n}. ${f[1]}</div><span style="display:flex;gap:7px"><button class="dl" style="background:#25d366;color:#07351b;border:none;cursor:pointer" onclick="shareItem('${s}','${f[0]}')">↗</button><a class="dl" href="${s}" download>⬇</a></span></div></div>`;}).join('');
 
   const u=encodeURIComponent(URL_), m=encodeURIComponent(MSG), mu=encodeURIComponent(MSG+' '+URL_);
   document.getElementById('wa').href='https://wa.me/?text='+mu;
@@ -147,6 +147,22 @@
   function copyLink(){navigator.clipboard&&navigator.clipboard.writeText(URL_).then(()=>toast('Link copied ✓'),()=>toast(URL_));}
   function nativeShare(){if(navigator.share){navigator.share({title:'Lighthouse Care Services',text:MSG,url:URL_}).catch(()=>{});}}
   if(navigator.share){document.getElementById('nativeShare').style.display='inline-flex';}
+
+  /* Share ONE flyer. Tries to share the actual image file (best for WhatsApp/IG/Messenger),
+     then a link share, then falls back to WhatsApp with the image URL. */
+  async function shareItem(src,title){
+    const url=new URL(src,document.baseURI).href;
+    const text='“'+title+'” — Lighthouse Care Services, Katy TX · 713-584-7660 · '+URL_;
+    try{
+      if(navigator.canShare){
+        const r=await fetch(url); const b=await r.blob();
+        const file=new File([b], src.split('/').pop(), {type:b.type||'image/png'});
+        if(navigator.canShare({files:[file]})){ await navigator.share({files:[file], text}); return; }
+      }
+    }catch(e){}
+    try{ if(navigator.share){ await navigator.share({title:'Lighthouse Care Services', text, url}); return; } }catch(e){}
+    window.open('https://wa.me/?text='+encodeURIComponent(text+' '+url),'_blank');
+  }
 </script>
 </body>
 </html>
