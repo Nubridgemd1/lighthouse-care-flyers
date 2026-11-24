@@ -4,6 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lighthouse Care Services — Flyers</title>
+<meta name="description" content="Care that feels like home. A residential care home in Katy, Texas. Call 713-584-7660. View and download our flyers.">
+<link rel="canonical" href="https://nubridgemd1.github.io/lighthouse-care-flyers/">
+<!-- Rich link preview (WhatsApp, iMessage, Facebook, LinkedIn, email) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nubridgemd1.github.io/lighthouse-care-flyers/">
+<meta property="og:title" content="Lighthouse Care Services — Care that feels like home">
+<meta property="og:description" content="A residential care home in Katy, Texas. Nutritious meals, medication help, transportation and 24-hour support. Call 713-584-7660.">
+<meta property="og:image" content="https://nubridgemd1.github.io/lighthouse-care-flyers/share-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lighthouse Care Services — Care that feels like home">
+<meta name="twitter:description" content="A residential care home in Katy, Texas. Call 713-584-7660.">
+<meta name="twitter:image" content="https://nubridgemd1.github.io/lighthouse-care-flyers/share-card.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23132a52'/%3E%3Cpath d='M49 51 L71 51 L77 100 L43 100 Z' fill='%23c6a052'/%3E%3Cpath d='M60 30 L24 14 L30 34 Z' fill='%23e0c580'/%3E%3Cpath d='M60 30 L96 14 L90 34 Z' fill='%23e0c580'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap">
@@ -12,31 +27,47 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Montserrat',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
   .serif{font-family:'Playfair Display',Georgia,serif}
-  header{background:linear-gradient(160deg,#17315e,#0d1f3e);color:#fff;padding:54px 24px 46px;text-align:center}
-  .emb{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(224,197,128,.35);display:flex;align-items:center;justify-content:center}
-  header .eye{font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--gold2);margin-bottom:14px}
-  header h1{font-size:40px;font-weight:800;letter-spacing:-.01em}
-  header .sub{margin-top:12px;color:rgba(255,255,255,.82);font-size:15px;font-weight:500}
-  .bar{max-width:1080px;margin:26px auto 0;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#102445;font-weight:700;font-size:15px;padding:13px 24px;border-radius:999px;text-decoration:none;border:none}
-  .btn.ghost{background:transparent;color:var(--gold2);border:1px solid rgba(224,197,128,.4)}
-  .wrap{max-width:1120px;margin:0 auto;padding:40px 20px 70px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
+  header{background:linear-gradient(160deg,#17315e,#0d1f3e);color:#fff;padding:52px 20px 44px;text-align:center}
+  .emb{width:82px;height:82px;margin:0 auto 16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(224,197,128,.35);display:flex;align-items:center;justify-content:center}
+  header .eye{font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--gold2);margin-bottom:13px}
+  header h1{font-size:38px;font-weight:800;letter-spacing:-.01em}
+  header .sub{margin-top:11px;color:rgba(255,255,255,.82);font-size:15px;font-weight:500}
+  .share{max-width:760px;margin:26px auto 0}
+  .share .lbl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);font-weight:700;margin-bottom:12px}
+  .btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .s{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;color:#fff;border:none;cursor:pointer}
+  .s svg{width:17px;height:17px;flex:none}
+  .s.native{background:var(--gold);color:#102445}
+  .s.wa{background:#25d366;color:#07351b}
+  .s.fb{background:#1877f2}.s.x{background:#111}.s.li{background:#0a66c2}
+  .s.em{background:#5c6579}.s.sms{background:#2f9e6b}.s.cp{background:transparent;border:1px solid rgba(224,197,128,.45);color:var(--gold2)}
+  .dlbar{max-width:760px;margin:22px auto 0;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:14px;padding:12px 22px;border-radius:999px;text-decoration:none;border:1px solid rgba(255,255,255,.18)}
+  .btn.gold{background:var(--gold);color:#102445;border:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:40px 20px 30px}
+  .secttl{display:flex;align-items:center;gap:14px;margin:8px 0 22px}
+  .secttl h2{font-size:22px;color:var(--navy);font-weight:800}.secttl .ln{height:2px;flex:1;background:linear-gradient(90deg,var(--gold),transparent)}
+  .secttl small{color:var(--muted);font-weight:600;font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
   .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(15,34,70,.1);border:1px solid rgba(19,42,82,.06)}
   .card img{width:100%;display:block;background:#eee}
-  .card .m{padding:16px 18px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-  .card .t{font-weight:700;font-size:15px;color:var(--navy)}
-  .card .t span{display:block;font-weight:500;font-size:12.5px;color:var(--muted);margin-top:3px}
-  .dl{flex:none;display:inline-flex;align-items:center;gap:7px;background:var(--navy);color:#fff;font-weight:600;font-size:13px;padding:9px 15px;border-radius:9px;text-decoration:none}
-  footer{background:var(--navy2);color:rgba(255,255,255,.85);text-align:center;padding:34px 20px;font-size:14px;font-weight:500}
+  .card .m{padding:15px 17px 17px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .card .t{font-weight:700;font-size:14.5px;color:var(--navy)}
+  .card .t span{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:3px}
+  .dl{flex:none;display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;font-weight:600;font-size:12.5px;padding:9px 14px;border-radius:9px;text-decoration:none}
+  .mini{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
+  .mini .t{font-size:12.5px}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:13px 22px;border-radius:12px;font-weight:600;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:50}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+  footer{background:var(--navy2);color:rgba(255,255,255,.85);text-align:center;padding:32px 20px;font-size:14px;font-weight:500}
   footer b{color:#fff}
-  @media(max-width:520px){header h1{font-size:30px}}
+  @media(max-width:520px){header h1{font-size:28px}}
 </style>
 </head>
 <body>
 <header>
   <div class="emb">
-    <svg width="54" height="54" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="52" height="52" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity=".9"><path d="M60 30 L24 14 L30 34 Z" fill="#e0c580"/><path d="M60 30 L96 14 L90 34 Z" fill="#e0c580"/></g>
       <rect x="50" y="30" width="20" height="15" rx="2" fill="#c6a052"/><path d="M48 30 H72 L68 24 H52 Z" fill="#0d1f3e"/><circle cx="60" cy="22" r="3.4" fill="#e0c580"/>
       <rect x="45" y="45" width="30" height="6" rx="2" fill="#0d1f3e"/><path d="M49 51 L71 51 L77 100 L43 100 Z" fill="#c6a052"/>
@@ -45,40 +76,77 @@
   </div>
   <div class="eye">Katy, Texas · A Residential Care Home</div>
   <h1 class="serif">Lighthouse Care Services</h1>
-  <div class="sub">Flyer collection — 10 designs · 713‑584‑7660 · lighthouse‑care‑services.com</div>
-  <div class="bar">
-    <a class="btn" href="Lighthouse-Care-Flyers-All.pdf" download>⬇ Download all 10 (PDF)</a>
-    <a class="btn ghost" href="Lighthouse-Care-Flyers.zip" download>⬇ Download images (ZIP)</a>
+  <div class="sub">10 flyers · 713‑584‑7660 · lighthouse‑care‑services.com</div>
+
+  <div class="share">
+    <div class="lbl">Share this collection</div>
+    <div class="btns">
+      <button class="s native" id="nativeShare" style="display:none" onclick="nativeShare()">↗ Share…</button>
+      <a class="s wa" id="wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.68-6.13A11.86 11.86 0 010 11.9 11.9 11.9 0 0111.9 0 11.9 11.9 0 0124 11.9a11.9 11.9 0 01-17.8 10.33L.06 24zM6.6 20.1l.36.21a9.9 9.9 0 004.94 1.35A9.9 9.9 0 1012 2.02 9.9 9.9 0 002.02 11.9c0 1.78.47 3.5 1.36 5.02l.23.38-1 3.65 3.99-.85zM17.9 14.3c-.07-.12-.26-.19-.54-.33s-1.64-.81-1.9-.9-.44-.14-.63.14-.72.9-.88 1.09-.33.21-.6.07a7.9 7.9 0 01-2.33-1.44 8.7 8.7 0 01-1.6-2c-.17-.29 0-.44.13-.58s.29-.33.43-.5.19-.29.29-.48.05-.36-.02-.5-.63-1.52-.86-2.08c-.23-.55-.46-.47-.63-.48h-.54c-.19 0-.5.07-.76.36s-1 .98-1 2.38 1.02 2.76 1.17 2.95 2 3.05 4.85 4.28c.68.29 1.2.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.64-.67 1.87-1.32s.23-1.2.16-1.32z"/></svg> WhatsApp</a>
+      <a class="s sms" id="sms"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg> Text</a>
+      <a class="s em" id="em"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg> Email</a>
+      <a class="s fb" id="fb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12a12 12 0 10-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.23 2.6.23v2.9h-1.5c-1.4 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0024 12z"/></svg> Facebook</a>
+      <a class="s x" id="x" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9zM17.6 20.6h2L6.5 3.3h-2.2z"/></svg> X</a>
+      <a class="s li" id="li" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.3v1.6h.1a3.7 3.7 0 013.3-1.8c3.5 0 4.2 2.3 4.2 5.3v6.3zM5.3 7.4a2 2 0 110-4.1 2 2 0 010 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7z"/></svg> LinkedIn</a>
+      <button class="s cp" onclick="copyLink()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007 0l3-3a5 5 0 00-7-7l-1 1M14 11a5 5 0 00-7 0l-3 3a5 5 0 007 7l1-1"/></svg> Copy link</button>
+    </div>
+  </div>
+  <div class="dlbar">
+    <a class="btn gold" href="Lighthouse-Care-Flyers.zip" download>⬇ Download everything (ZIP)</a>
+    <a class="btn" href="Lighthouse-Care-Flyers-All.pdf" download>⬇ PDF booklet</a>
   </div>
 </header>
+
 <div class="wrap">
+  <div class="secttl"><h2 class="serif">Flyers</h2><small>&nbsp;Feed / print · 4:5</small><span class="ln"></span></div>
   <div class="grid" id="grid"></div>
+
+  <div class="secttl" style="margin-top:46px"><h2 class="serif">Story &amp; Status</h2><small>&nbsp;WhatsApp Status · IG / FB / TikTok Stories · 9:16</small><span class="ln"></span></div>
+  <div class="grid mini" id="story"></div>
+
+  <div class="secttl" style="margin-top:46px"><h2 class="serif">Square posts</h2><small>&nbsp;Instagram / Facebook / LinkedIn · 1:1</small><span class="ln"></span></div>
+  <div class="grid mini" id="square"></div>
 </div>
+
 <footer>
   <b>Lighthouse Care Services</b> · 19418 Little Pine Lane, Katy, TX 77449 · Operated by Linus Agwunobi<br>
-  Tap any flyer to open full size · Download button saves the image.
+  Tap any image to open full size · the download button saves it to your phone or computer.
 </footer>
+
+<div class="toast" id="toast">Link copied ✓</div>
+
 <script>
+  const URL_='https://nubridgemd1.github.io/lighthouse-care-flyers/';
+  const MSG="Lighthouse Care Services — a residential care home in Katy, TX. Care that feels like home 🏠 Call 713-584-7660.";
   const F=[
-   ['Care that feels like home','Signature brand flyer'],
-   ['Everything a day of good care needs','All six services'],
-   ['The Home on Little Pine Lane','4 bedrooms · clean · quiet'],
-   ['Now Welcoming Residents','Availability announcement'],
-   ['A day, well cared for','Daily life timeline'],
-   ['Rides to every appointment','Transportation'],
-   ['Three meals. One warm table.','Meals & dining'],
-   ['Safe, supported, never alone','24‑hour care'],
-   ['Come see it for yourself','Tour invitation'],
-   ['Placing a loved one in good hands','For families & coordinators'],
+   ['Care that feels like home','Signature'],['Everything a day of good care needs','All services'],
+   ['The Home on Little Pine Lane','The house'],['Now Welcoming Residents','Availability'],
+   ['A day, well cared for','Daily life'],['Rides to every appointment','Transportation'],
+   ['Three meals. One warm table.','Meals'],['Safe, supported, never alone','24-hour care'],
+   ['Come see it for yourself','Tour'],['Placing a loved one in good hands','For families'],
   ];
-  document.getElementById('grid').innerHTML=F.map((f,i)=>{
-    const n=i+1,src='Lighthouse-Flyer-'+n+'.png';
-    return `<div class="card">
-      <a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${f[0]}" loading="lazy"></a>
-      <div class="m"><div class="t">${n}. ${f[0]}<span>${f[1]}</span></div>
-      <a class="dl" href="${src}" download>⬇ PNG</a></div>
-    </div>`;
-  }).join('');
+  document.getElementById('grid').innerHTML=F.map((f,i)=>{const n=i+1,s='Lighthouse-Flyer-'+n+'.png';
+    return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]}"></a>
+      <div class="m"><div class="t">${n}. ${f[0]}<span>${f[1]}</span></div><a class="dl" href="${s}" download>⬇ PNG</a></div></div>`;}).join('');
+  document.getElementById('story').innerHTML=F.map((f,i)=>{const n=i+1,s='social-story/Story-'+n+'.png';
+    return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]} story"></a>
+      <div class="m"><div class="t">${n}. ${f[1]}</div><a class="dl" href="${s}" download>⬇</a></div></div>`;}).join('');
+  document.getElementById('square').innerHTML=F.map((f,i)=>{const n=i+1,s='social-square/Square-'+n+'.png';
+    return `<div class="card"><a href="${s}" target="_blank" rel="noopener"><img src="${s}" loading="lazy" alt="${f[0]} square"></a>
+      <div class="m"><div class="t">${n}. ${f[1]}</div><a class="dl" href="${s}" download>⬇</a></div></div>`;}).join('');
+
+  const u=encodeURIComponent(URL_), m=encodeURIComponent(MSG), mu=encodeURIComponent(MSG+' '+URL_);
+  document.getElementById('wa').href='https://wa.me/?text='+mu;
+  document.getElementById('sms').href='sms:?&body='+mu;
+  document.getElementById('em').href='mailto:?subject='+encodeURIComponent('Lighthouse Care Services — Katy, TX')+'&body='+encodeURIComponent(MSG+'\n\nView the flyers: '+URL_);
+  document.getElementById('fb').href='https://www.facebook.com/sharer/sharer.php?u='+u;
+  document.getElementById('x').href='https://twitter.com/intent/tweet?text='+m+'&url='+u;
+  document.getElementById('li').href='https://www.linkedin.com/sharing/share-offsite/?url='+u;
+
+  function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800);}
+  function copyLink(){navigator.clipboard&&navigator.clipboard.writeText(URL_).then(()=>toast('Link copied ✓'),()=>toast(URL_));}
+  function nativeShare(){if(navigator.share){navigator.share({title:'Lighthouse Care Services',text:MSG,url:URL_}).catch(()=>{});}}
+  if(navigator.share){document.getElementById('nativeShare').style.display='inline-flex';}
 </script>
 </body>
 </html>
